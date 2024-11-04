@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-wrapper">
+            <div class="login-header">Login</div>
+            <div class="login-form">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <label for="username" class="label">Username:</label>
+                    <input type="text" id="username" class="input-field" required>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-key"></i>
+                    <label for="pw" class="label">Password:</label>
+                    <input type="password" id="pw" class="input-field" required>
+                </div>
+                <div class="login-check">
+                    <div class="remember">
+                        <label for="remember-me">Remember me</label>
+                        <input type="checkbox" id="remember-me">
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="submit" class="input-login" value="Login">
+                </div>
+                <span>Don't have an account? <a href="#">Register</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e68f7114be.js" crossorigin="anonymous"></script>
+</body>
+</html>

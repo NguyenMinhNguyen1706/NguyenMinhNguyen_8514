@@ -1,0 +1,163 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    animation: slide-in 0.6s ease-out;
+}
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.login-header::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #9b59b6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.login-form .input-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #f1f1f1;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    background: #e9e9e9;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(155, 89, 182, 0.5);
+}
+
+.input-field:focus ~ .label {
+    color: #9b59b6;
+}
+
+.input-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.input-field:focus + i {
+    color: #9b59b6;
+}
+
+/* Submit Button */
+.input-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #9b59b6;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.input-login:hover {
+    background-color: #8e44ad;
+    transform: translateY(-3px);
+}
+
+/* Checkbox & Forgot Password */
+.login-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+input[type="checkbox"] {
+    accent-color: #9b59b6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8e44ad;
+}
+
+/* Register Prompt */
+span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+span a {
+    font-weight: bold;
+}
